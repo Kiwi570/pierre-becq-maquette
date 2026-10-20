@@ -1,0 +1,101 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/product-page/applique-de-jean-prouv%C3%A9",
+      "destination": "/objets/applique-prouve",
+      "permanent": true
+    },
+    {
+      "source": "/product-page/vase-daum-de-nancy-2",
+      "destination": "/objets/vase-daum",
+      "permanent": true
+    },
+    {
+      "source": "/product-page/christ-en-bois-de-sainte-lucie",
+      "destination": "/objets/christ-sainte-lucie",
+      "permanent": true
+    },
+    {
+      "source": "/product-page/pendule-empire",
+      "destination": "/objets/pendule-empire",
+      "permanent": true
+    },
+    {
+      "source": "/product-page/coffret-en-bois-de-sainte-lucie",
+      "destination": "/objets/coffret-sainte-lucie",
+      "permanent": true
+    },
+    {
+      "source": "/product-page/fauteuil-louis-cresson",
+      "destination": "/objets/fauteuil-rene-cresson",
+      "permanent": true
+    },
+    {
+      "source": "/product-page/vase-en-c%C3%A9ramique",
+      "destination": "/objets/vase-pinon",
+      "permanent": true
+    },
+    {
+      "source": "/product-page/reliquaire",
+      "destination": "/objets/reliquaire",
+      "permanent": true
+    },
+    {
+      "source": "/product-page/paire-de-bougeoires-empire",
+      "destination": "/objets/bougeoirs-empire",
+      "permanent": true
+    },
+    {
+      "source": "/product-page/statue-en-terre-cuite",
+      "destination": "/objets/statue-terre-cuite",
+      "permanent": true
+    },
+    {
+      "source": "/product-page/coffret-circulaire-en-bois-de-sainte-lucie",
+      "destination": "/objets/coffret-circulaire",
+      "permanent": true
+    },
+    {
+      "source": "/product-page/fauteuil-louis-cresson-l-a%C3%AEn%C3%A9-ren%C3%A9",
+      "destination": "/objets/fauteuil-louis-cresson",
+      "permanent": true
+    },
+    {
+      "source": "/product-page/tableau-que-le-soleil-brille-toujours",
+      "destination": "/objets/tableau-pogrebinsky",
+      "permanent": true
+    },
+    {
+      "source": "/product-page/fauteuil-louis-xv-cabriolet",
+      "destination": "/objets/fauteuil-louis-xv",
+      "permanent": true
+    },
+    {
+      "source": "/product-page/boque-en-ivoire",
+      "destination": "/galerie",
+      "permanent": false
+    },
+    {
+      "source": "/%C3%A0-propos",
+      "destination": "/maison",
+      "permanent": true
+    },
+    {
+      "source": "/shipping-returns",
+      "destination": "/mentions-legales",
+      "permanent": true
+    },
+    {
+      "source": "/faq",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
+}

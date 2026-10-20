@@ -1,0 +1,275 @@
+/* Textes des pages, en français et en anglais.
+   Tous les faits viennent du site actuel ; ce qui manque est marqué « à compléter ». */
+
+const L = (fr, en) => ({ fr, en });
+
+module.exports = {
+  nav: {
+    galerie: L('La galerie', 'Gallery'),
+    expertises: L('Expertises', 'Appraisals'),
+    maison: L('La maison', 'The house'),
+    contact: L('Contact', 'Contact')
+  },
+  ui: {
+    skip: L('Aller au contenu', 'Skip to content'),
+    home: L('Pierre Becq Antiquaire, accueil', 'Pierre Becq Antiquaire, home'),
+    homeShort: L('Accueil', 'Home'),
+    tagline: L('Antiquaire · Metz · 1969', 'Antiques · Metz · 1969'),
+    mainNav: L('Navigation principale', 'Main navigation'),
+    motion: L('Réduire les animations', 'Reduce motion'),
+    motionShort: L('Calme', 'Calm'),
+    menu: L('Menu', 'Menu'),
+    close: L('Fermer', 'Close'),
+    voir: L('Voir', 'View'),
+    loupe: L('Loupe', 'Loupe'),
+    glisser: L('Glisser', 'Drag'),
+    prix: L('Prix sur demande', 'Price on request'),
+    dispo: L('Disponible', 'Available'),
+    copy: L('Copier', 'Copy'),
+    copied: L('Copié', 'Copied'),
+    aCompleter: L('à compléter', 'to be completed'),
+    aPreciser: L('à préciser', 'to be confirmed'),
+    mapLabel: L('Carte schématique : Luxembourg, Metz, Senon et Nancy, le long de la Moselle', 'Schematic map: Luxembourg, Metz, Senon and Nancy along the Moselle'),
+    mapNote: L('Carte schématique — Moselle, Meuse, Meurthe-et-Moselle, Luxembourg', 'Schematic map — Moselle, Meuse, Meurthe-et-Moselle, Luxembourg'),
+    pieces: L('pièces', 'pieces'),
+    toute: L('Toute la galerie', 'The whole gallery')
+  },
+  footer: {
+    boutique: L('La boutique', 'The shop'),
+    plan: L('Le site', 'Site'),
+    suivre: L('Suivre la maison', 'Follow us'),
+    mentions: L('Mentions légales', 'Legal notice'),
+    maquette: L('Maquette Ptit Kiwi — contenus à valider par le client', 'Ptit Kiwi mock-up — content to be approved by the client')
+  },
+  titres: {
+    judiciaire: L("Expert judiciaire honoraire près la cour d'appel", 'Honorary court-appointed expert at the Court of Appeal'),
+    cne: L('Membre de la Compagnie Nationale des Experts en Art', 'Member of the Compagnie Nationale des Experts en Art'),
+    insigneAlt: L('Insigne des experts judiciaires près la cour d’appel', 'Badge of court-appointed experts at the Court of Appeal'),
+    cneAlt: L('Logo de la Compagnie Nationale des Experts — Experts en Art', 'Logo of the Compagnie Nationale des Experts — art experts')
+  },
+  home: {
+    title: L('Pierre Becq Antiquaire — Metz, depuis 1969', 'Pierre Becq Antiquaire — Metz, since 1969'),
+    desc: L("Antiquaire et expert à Metz depuis 1969 : mobilier et objets d'art du XVIe au XXe siècle, expertises, achat de successions.", 'Antique dealer and expert in Metz since 1969: furniture and objets d’art from the 16th to the 20th century, appraisals, estate purchases.'),
+    eyebrow: L('Antiquaire · Expert · Metz', 'Antique dealer · Expert · Metz'),
+    sub: L("Mobilier et objets d'art du XVIe au XXe siècle, garantis anciens, à Metz depuis 1969.", 'Furniture and objets d’art from the 16th to the 20th century, guaranteed antique, in Metz since 1969.'),
+    cta1: L('Visiter la galerie', 'Visit the gallery'),
+    cta2: L('Demander une expertise', 'Request an appraisal'),
+    scroll: L('Défiler', 'Scroll'),
+    voirPiece: L('Voir la pièce', 'View the piece'),
+    heroNote: {
+      'applique-prouve': L('Prêtée au Centre Pompidou en 1990', 'Lent to the Centre Pompidou in 1990'),
+      'vase-daum': L('Verre gravé à l’acide, signé', 'Acid-etched glass, signed'),
+      'christ-sainte-lucie': L('Bois de Sainte-Lucie, Nancy', 'Sainte-Lucie wood, Nancy')
+    },
+    sinceEyebrow: L('La maison', 'The house'),
+    sinceTitle: L("Spécialistes de l'antiquité depuis 1969", 'Antiques specialists since 1969'),
+    sinceLead: L("La boutique, 5 rue Gambetta à Metz, présente un stock conséquent : mobiliers et objets d'art du XVIe au XXe siècle.", 'Our shop at 5 rue Gambetta in Metz holds a substantial stock of furniture and objets d’art from the 16th to the 20th century.'),
+    sinceCaption: L('La boutique, 5 rue Gambetta à Metz', 'The shop, 5 rue Gambetta, Metz'),
+    sinceYears: L("ans d'expérience", 'years of experience'),
+    engagements: [
+      L('Marchandise garantie ancienne', 'Every piece guaranteed antique'),
+      L("Certificat d'authenticité à la demande", 'Certificate of authenticity on request'),
+      L('Expédition soignée, assurée par des professionnels', 'Careful shipping, handled by professionals')
+    ],
+    sinceLink: L('Découvrir la maison', 'Discover the house'),
+    salleEyebrow: L('La galerie', 'The gallery'),
+    salleTitle: L('Nos coups de cœur du moment', 'Our current favourites'),
+    salleLead: L('Chaque pièce est présentée avec ses vraies dimensions. Faites défiler la salle.', 'Each piece is shown with its real dimensions. Scroll through the room.'),
+    salleEnd: L('Une question sur une pièce ? Le prix est communiqué sur simple demande.', 'A question about a piece? Prices are given on request.'),
+    lorraineEyebrow: L('La Lorraine des arts', 'Lorraine craftsmanship'),
+    lorraineTitle: L('Trois noms de Nancy, réunis rue Gambetta', 'Three names from Nancy, together on rue Gambetta'),
+    lorraineLead: L("Le bois de Sainte-Lucie sculpté, le verre gravé à l'acide, la tôle d'acier martelé : trois savoir-faire attachés à Nancy, présents aujourd'hui dans la galerie.", 'Carved Sainte-Lucie wood, acid-etched glass, hammered sheet steel: three crafts tied to Nancy, all in the gallery today.'),
+    panels: [
+      { slug: 'coffret-sainte-lucie', tex: 'g15-bois-fruitier', top: L('Bois de Sainte-Lucie', 'Sainte-Lucie wood'), name: 'César Bagard', text: L("Le bois de Sainte-Lucie est dit aussi bois de Bagard, du nom du sculpteur lorrain César Bagard (1620-1709).", 'Sainte-Lucie wood is also called Bagard wood, after the Lorraine sculptor César Bagard (1620–1709).') },
+      { slug: 'vase-daum', tex: 'g16-verre-grave', top: L("Verre gravé à l'acide", 'Acid-etched glass'), name: 'Daum Nancy', text: L("Verre multicouche gravé à l'acide, repris à la roue et martelé : un vase signé, d'époque Art nouveau.", 'Multi-layered glass, acid-etched, wheel-finished and hammered: a signed Art Nouveau vase.') },
+      { slug: 'applique-prouve', tex: 'g17-tole-martelee', top: L("Tôle d'acier martelé", 'Hammered sheet steel'), name: 'Jean Prouvé', text: L('Une applique de 1925 environ, prêtée au Centre Pompidou en 1990 pour l’exposition « Constructeur ».', 'A wall light from around 1925, lent to the Centre Pompidou in 1990 for the “Constructeur” exhibition.') }
+    ],
+    expertEyebrow: L('Expertises', 'Appraisals'),
+    expertTitle: L('L’expertise de vos biens mobiliers', 'Appraising your furniture and works of art'),
+    expertLead: L('Inventaire, estimation et rapport chiffré, pour l’assurance, une succession ou une entreprise.', 'Inventory, valuation and a priced report, for insurance, an estate or a company.'),
+    expertText: L("L'expertise des objets d'art est le moyen le plus efficace pour prouver l'existence d'objets précieux, au terme d'un inventaire et d'une estimation préalable.", 'An appraisal is the most effective way to prove that valuable objects exist, through an inventory and a prior valuation.'),
+    expertCta: L('Demander une expertise', 'Request an appraisal'),
+    servicesEyebrow: L('Au-delà de la galerie', 'Beyond the gallery'),
+    servicesTitle: L('Acheter, estimer, expédier', 'Buying, valuing, shipping'),
+    services: [
+      { img: 'g12-conteneur', title: L('Conteneurs pour les professionnels étrangers', 'Containers for overseas trade buyers'), text: L('Pour notre clientèle professionnelle étrangère, nous prenons en charge vos conteneurs : emballage, chargement et démarches douanières.', 'For our overseas trade clients, we handle your containers: packing, loading and customs formalities.') },
+      { img: 'g13-piece-vide', title: L('Successions et partages', 'Estates and divisions'), text: L("Estimation, expertise et achat de successions et partages, avec un service de débarras de qualité.", 'Valuation, appraisal and purchase of estates and divisions, with a careful house-clearance service.') },
+      { img: 'g14-emballage', title: L('Expédition soignée', 'Careful shipping'), text: L('Notre service expédition est soigné et assuré par des professionnels.', 'Our shipping is handled with care, by professionals.') },
+      { img: null, title: L('Nous achetons', 'We buy'), text: L("Mobiliers anciens, objets d'art, tableaux, bronzes, horlogerie, argenterie : estimation et achat.", 'Antique furniture, objets d’art, paintings, bronzes, clocks, silverware: valuation and purchase.'), cta: L('Proposer un objet', 'Offer an object') }
+    ],
+    marquee: L(["Mobiliers anciens", "Objets d'art", 'Tableaux', 'Bronzes', 'Horlogerie', 'Argenterie'], ['Antique furniture', 'Objets d’art', 'Paintings', 'Bronzes', 'Clocks', 'Silverware']),
+    venirEyebrow: L('Venir', 'Visit'),
+    venirTitle: L('Rue Gambetta, près de la gare de Metz', 'Rue Gambetta, near Metz station'),
+    band: L('Metz — Nancy — Luxembourg', 'Metz — Nancy — Luxembourg')
+  },
+  venir: {
+    metzLabel: L('La boutique', 'The shop'),
+    senonLabel: L('Meuse', 'Meuse'),
+    metzNote: L('Proche de la gare de Metz.', 'Close to Metz railway station.'),
+    senonNote: L('Seconde adresse de la maison. Rôle du lieu (dépôt, atelier, visite) :', 'The house’s second address. What happens there (storage, workshop, visits):'),
+    email: L('E-mail :', 'Email:')
+  },
+  galerie: {
+    title: L('La galerie — Pierre Becq Antiquaire', 'Gallery — Pierre Becq Antiquaire'),
+    desc: L("Une sélection de nos œuvres d'art, du XVIIe au XXe siècle. Prix sur demande.", 'A selection of our works of art, from the 17th to the 20th century. Prices on request.'),
+    lead: L("Une sélection de nos œuvres d'art, présentée en trois salles, du XVIIe au XXe siècle.", 'A selection of our works of art, shown in three rooms, from the 17th to the 20th century.'),
+    epoque: L('Époque', 'Period'),
+    type: L('Type', 'Type'),
+    toutes: L('Toutes', 'All'),
+    tous: L('Tous', 'All'),
+    salle: L('Salle', 'Room'),
+    none: L('Aucune pièce ne correspond à ce filtre dans cette salle.', 'No piece in this room matches the filter.'),
+    ctaTitle: L('Vous cherchez une pièce, ou souhaitez en vendre une ?', 'Looking for a piece, or wishing to sell one?'),
+    ctaText: L("Notre stock dépasse cette sélection. Écrivez-nous ou passez rue Gambetta.", 'Our stock goes beyond this selection. Write to us or visit rue Gambetta.'),
+    ctaBtn: L('Nous écrire', 'Write to us')
+  },
+  objet: {
+    retour: L('La galerie', 'Gallery'),
+    epoque: L('Époque', 'Period'),
+    materiaux: L('Matériaux', 'Materials'),
+    dimensions: L('Dimensions', 'Dimensions'),
+    provenance: L('Provenance', 'Origin'),
+    dispo: L('Disponibilité', 'Availability'),
+    demander: L('Demander le prix', 'Ask for the price'),
+    appeler: L('Ou appelez le', 'Or call'),
+    garanties: L("Garantie ancienne · Certificat d'authenticité à la demande · Expédition par des professionnels", 'Guaranteed antique · Certificate of authenticity on request · Shipped by professionals'),
+    loupe: L('Loupe', 'Loupe'),
+    mur: L('Voir au mur', 'See it on a wall'),
+    murOff: L('Dimensions à compléter pour la vue au mur', 'Dimensions needed for the wall view'),
+    precedente: L('Pièce précédente', 'Previous piece'),
+    suivante: L('Pièce suivante', 'Next piece'),
+    memeSalle: L('Dans la même salle', 'In the same room'),
+    photo: L('Photo', 'Photo'),
+    murTitle: L('Vue au mur, à l’échelle', 'Wall view, to scale'),
+    murNote: L('Simulation à l’échelle : silhouette de 1,75 m, console de 85 cm. Photo non retouchée.', 'Scale simulation: 1.75 m figure, 85 cm console. Photo not retouched.'),
+    murFigure: L('1,75 m', '1.75 m'),
+    murConsole: L('console 85 cm', 'console 85 cm'),
+    formTitle: L('Demander le prix', 'Ask for the price'),
+    formIntro: L('Nous vous répondons avec le prix et les détails de la pièce.', 'We will reply with the price and details of the piece.'),
+    pieceLabel: L('Pièce', 'Piece')
+  },
+  form: {
+    nom: L('Nom', 'Name'),
+    email: L('E-mail', 'Email'),
+    tel: L('Téléphone', 'Phone'),
+    message: L('Message', 'Message'),
+    ville: L('Ville', 'Town'),
+    consent: L("J'accepte que mes données servent uniquement à répondre à ma demande.", 'I agree that my details are used only to answer my request.'),
+    envoyer: L('Envoyer la demande', 'Send the request'),
+    okTitle: L('Demande prête', 'Request ready'),
+    okText: L("Dans la version en ligne, votre message part à la boutique et vous recevez une réponse rapidement.", 'On the live site, your message goes to the shop and you receive a reply shortly.'),
+    demo: L("Maquette : aucun message n'est envoyé.", 'Mock-up: no message is sent.'),
+    required: L('Ce champ est requis.', 'This field is required.'),
+    emailBad: L('Indiquez une adresse e-mail complète, par exemple nom@domaine.fr.', 'Enter a full email address, for example name@domain.com.'),
+    consentReq: L('Cochez la case pour envoyer la demande.', 'Tick the box to send the request.'),
+    sujet: L('Votre demande', 'Your request'),
+    sujets: L(['Acheter une pièce', 'Vendre un objet', 'Une expertise', 'Autre'], ['Buy a piece', 'Sell an object', 'An appraisal', 'Other'])
+  },
+  expertises: {
+    title: L('Expertises — Pierre Becq Antiquaire', 'Appraisals — Pierre Becq Antiquaire'),
+    desc: L("Expertise et estimation de biens mobiliers à Metz : particuliers, notaires et successions, entreprises. Demande en ligne.", 'Appraisal and valuation of furniture and works of art in Metz: private clients, notaries and estates, companies. Online request.'),
+    h1: L('Expertises', 'Appraisals'),
+    lead: L("Faites votre demande d'expertise en ligne et soyez recontacté dans les meilleurs délais.", 'Send your appraisal request online and we will get back to you as soon as possible.'),
+    pourqui: L('Pour qui', 'Who it is for'),
+    pourquiTitle: L('Trois missions, une même rigueur', 'Three missions, one method'),
+    publics: [
+      { img: 'g09-particulier', title: L("L'expert du particulier", 'For private clients'),
+        text: L(["L'expertise d'art préalable, par son état descriptif des biens mobiliers, détermine le bon choix du contrat multirisque habitation, valide l'assurance tous risques et objets précieux et confère aux biens mobiliers la preuve d'existence.",
+                 "Elle permet d'évaluer avec précision le capital mobilier : le rapport présente une liste récapitulative des objets mobiliers et précieux, classés selon leur nature et chiffrés. Cette répartition permet d'évaluer au plus juste le capital de la multirisque habitation et de distinguer les objets de valeur entrant dans la garantie."],
+                ['A prior art appraisal, through its descriptive record of your furniture and works of art, helps you choose the right home insurance policy, supports all-risk and valuables cover, and provides proof that the objects exist.',
+                 'It values your contents precisely: the report lists your furniture and valuables, classified by type and priced. This breakdown sets the insured contents at the right level and identifies the valuables covered by the policy.']) },
+      { img: 'g10-notaire', title: L("L'expert auprès du notaire", 'For notaries and estates'),
+        text: L(["Partie intégrante d'une succession, l'évaluation du patrimoine mobilier exige, au même titre que celle des biens immobiliers, l'intervention d'un spécialiste choisi par les intéressés ou le notaire. Notre cabinet répond à cette demande."],
+                ['As part of an estate, the valuation of furniture and works of art requires, just like that of real estate, a specialist chosen by the heirs or the notary. We provide this service.']) },
+      { img: 'g11-entreprise', title: L("L'expert de l'entreprise", 'For companies'),
+        text: L(["Notre mission consiste à réaliser un inventaire descriptif des biens de l'entreprise, du matériel et du mobilier d'exploitation.",
+                 "Les avantages immédiats : être parfaitement assuré, éviter la sous-assurance ou la sur-assurance, et faciliter le règlement d'un éventuel sinistre en apportant la preuve de l'existence des biens et de leur valeur."],
+                ['We produce a descriptive inventory of the company’s assets, equipment and business furniture.',
+                 'The immediate benefits: being properly insured, avoiding under- or over-insurance, and easing any claim by proving that the assets exist and what they are worth.']) }
+    ],
+    rapportEyebrow: L('Le rapport', 'The report'),
+    rapportTitle: L('Un dossier original, photographié et chiffré', 'An original file, photographed and priced'),
+    rapportText: L('Expertise comportant un dossier original avec des photographies et des descriptifs détaillés et chiffrés.', 'Each appraisal includes an original file with photographs and detailed, priced descriptions.'),
+    steps: [
+      { t: L('Votre demande', 'Your request'), d: L('En ligne ou par téléphone, avec quelques photos si vous le pouvez.', 'Online or by phone, with a few photos if you can.') },
+      { t: L("L'inventaire", 'The inventory'), d: L('Chaque objet est décrit et photographié.', 'Each object is described and photographed.') },
+      { t: L("L'estimation", 'The valuation'), d: L('Chaque objet est chiffré et classé selon sa nature.', 'Each object is priced and classified by type.') },
+      { t: L('Le rapport', 'The report'), d: L('Vous recevez un dossier original, détaillé et chiffré.', 'You receive an original, detailed and priced file.') }
+    ],
+    estimons: L('Ce que nous estimons', 'What we value'),
+    estimonsList: L(['Mobiliers anciens', "Objets d'art", 'Tableaux', 'Bronzes', 'Horlogerie', 'Argenterie', 'Successions et partages'], ['Antique furniture', 'Objets d’art', 'Paintings', 'Bronzes', 'Clocks', 'Silverware', 'Estates and divisions']),
+    tarifs: L('Tarifs et délais', 'Fees and timing'),
+    formEyebrow: L("Demande d'expertise", 'Appraisal request'),
+    formTitle: L('Décrivez-nous vos objets', 'Tell us about your objects'),
+    wiz: L(['Vous', 'Les objets', 'Coordonnées', 'Vérifier'], ['You', 'Objects', 'Details', 'Check']),
+    vous: L('Vous êtes', 'You are'),
+    vousOpts: L(['Un particulier', 'Un notaire', 'Une entreprise'], ['A private client', 'A notary', 'A company']),
+    motif: L('Pour', 'For'),
+    motifOpts: L(['Une assurance', 'Une succession ou un partage', 'Une vente', 'Un inventaire'], ['Insurance', 'An estate or division', 'A sale', 'An inventory']),
+    objets: L('Description des objets', 'Description of the objects'),
+    objetsPh: L('Par exemple : une commode, deux tableaux, une pendule…', 'For example: a chest of drawers, two paintings, a clock…'),
+    nombre: L("Nombre d'objets (environ)", 'Number of objects (approx.)'),
+    photos: L('Photos (facultatif)', 'Photos (optional)'),
+    drop: L('Déposez vos photos ici ou cliquez pour les choisir', 'Drop your photos here or click to choose them'),
+    dropSub: L('JPG ou PNG, 8 photos maximum', 'JPG or PNG, up to 8 photos'),
+    precedent: L('Retour', 'Back'),
+    suivant: L('Continuer', 'Continue'),
+    recap: L('Vérifiez votre demande', 'Check your request'),
+    aucune: L('Aucune', 'None'),
+    direct: L('Vous préférez en parler ?', 'Prefer to talk?')
+  },
+  maison: {
+    title: L('La maison — Pierre Becq Antiquaire', 'The house — Pierre Becq Antiquaire'),
+    desc: L("Pierre Becq Antiquaire, à Metz depuis 1969 : expert judiciaire honoraire, membre de la Compagnie Nationale des Experts en Art.", 'Pierre Becq Antiquaire, in Metz since 1969: honorary court-appointed expert, member of the Compagnie Nationale des Experts en Art.'),
+    h1: L('La maison', 'The house'),
+    lead: L('Pierre Becq Antiquaire, à Metz depuis 1969.', 'Pierre Becq Antiquaire, in Metz since 1969.'),
+    heroAlt: L('Dans la boutique de la rue Gambetta', 'Inside the shop on rue Gambetta'),
+    friseEyebrow: L('Depuis 1969', 'Since 1969'),
+    friseTitle: L("Plus de 50 ans d'expérience", 'Over 50 years of experience'),
+    frise: [
+      { y: '1969', t: L("Spécialistes de l'antiquité depuis 1969.", 'Antiques specialists since 1969.') },
+      { y: 'now', t: L("Mobilier du XVIe au XXe siècle, objets d'art, expertises, achat de successions.", 'Furniture from the 16th to the 20th century, objets d’art, appraisals, estate purchases.') },
+      { y: '…', t: L("Les grandes dates de la maison", 'Key dates in the house’s history'), tbc: true }
+    ],
+    specEyebrow: L('Nos spécialistes', 'Our specialists'),
+    specTitle: L('Des recherches sur chaque objet', 'Research on every object'),
+    specText: L(["Nos spécialistes d'antiquités et d'objets d'art expertisent et effectuent toutes les recherches nécessaires sur vos articles.", "Ils pourront alors vous apporter les informations attendues sur votre objet : le prix, l'époque, des photos et le nom du créateur."],
+                ['Our antiques and art specialists appraise your pieces and carry out all the necessary research.', 'They can then give you what you want to know about your object: its price, its period, photographs and the name of its maker.']),
+    album: [
+      { key: 'maison/boutique-portrait', cap: L('Dans la boutique', 'Inside the shop') },
+      { key: 'maison/facade-rue-gambetta', cap: L('5 rue Gambetta, Metz', '5 rue Gambetta, Metz') }
+    ],
+    engageEyebrow: L('Nos engagements', 'Our commitments'),
+    engageTitle: L('Ce que nous garantissons', 'What we guarantee'),
+    engagements: [
+      L('Notre marchandise vous est garantie ancienne.', 'Every piece is guaranteed antique.'),
+      L("Un certificat d'authenticité l'accompagne à la demande.", 'A certificate of authenticity is provided on request.'),
+      L('Notre service expédition est soigné et assuré par des professionnels.', 'Shipping is handled with care, by professionals.'),
+      L('Pour la clientèle professionnelle étrangère : emballage, chargement et démarches douanières de vos conteneurs.', 'For overseas trade clients: packing, loading and customs formalities for your containers.')
+    ],
+    lieuxEyebrow: L('Nos lieux', 'Our locations'),
+    lieuxTitle: L('Metz, Senon, et toute la région', 'Metz, Senon and the whole region'),
+    lieuxLead: L('Metz — Nancy — Luxembourg', 'Metz — Nancy — Luxembourg')
+  },
+  contact: {
+    title: L('Contact — Pierre Becq Antiquaire', 'Contact — Pierre Becq Antiquaire'),
+    desc: L("Pierre Becq Antiquaire, 5 rue Gambetta, 57000 Metz. 03 87 63 61 61. Acheter, vendre, faire expertiser.", 'Pierre Becq Antiquaire, 5 rue Gambetta, 57000 Metz. +33 3 87 63 61 61. Buy, sell, get an appraisal.'),
+    h1: L('Contact', 'Contact'),
+    lead: L("Vous souhaitez acheter ou vendre un objet d'art, ou faire une demande d'expertise ? Écrivez-nous ou passez à la boutique.", 'Would you like to buy or sell a work of art, or request an appraisal? Write to us or visit the shop.'),
+    heroAlt: L('La façade de la boutique, rue Gambetta à Metz', 'The shop front on rue Gambetta, Metz'),
+    formEyebrow: L('Nous écrire', 'Write to us'),
+    formTitle: L('Votre message', 'Your message'),
+    horaires: L('Horaires', 'Opening hours')
+  },
+  mentions: {
+    title: L('Mentions légales — Pierre Becq Antiquaire', 'Legal notice — Pierre Becq Antiquaire'),
+    desc: L('Mentions légales et données personnelles du site Pierre Becq Antiquaire.', 'Legal notice and personal data for the Pierre Becq Antiquaire website.'),
+    h1: L('Mentions légales', 'Legal notice')
+  },
+  nf: {
+    title: L('Page introuvable — Pierre Becq Antiquaire', 'Page not found — Pierre Becq Antiquaire'),
+    h1: L('Ce socle est vide', 'This plinth is empty'),
+    text: L("La page demandée n'existe pas, ou plus. La pièce a peut-être trouvé preneur.", 'The page you asked for does not exist, or no longer exists. The piece may have found a new home.'),
+    back: L("Retour à l'accueil", 'Back to the home page')
+  }
+};

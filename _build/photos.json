@@ -1,0 +1,1053 @@
+{
+ "maison/facade-rue-gambetta": {
+  "w": 982,
+  "h": 736,
+  "sizes": [
+   480,
+   960,
+   982
+  ],
+  "alpha": false,
+  "color": "#b6a59a"
+ },
+ "maison/boutique-portrait": {
+  "w": 4000,
+  "h": 2323,
+  "sizes": [
+   480,
+   960,
+   1600,
+   2400
+  ],
+  "alpha": false,
+  "color": "#7b6254"
+ },
+ "maison/logo-cne": {
+  "w": 512,
+  "h": 512,
+  "sizes": [
+   480,
+   512
+  ],
+  "alpha": false,
+  "color": "#919fac"
+ },
+ "maison/insigne-expert-judiciaire": {
+  "w": 226,
+  "h": 223,
+  "sizes": [
+   226
+  ],
+  "alpha": false,
+  "color": "#6a493a"
+ },
+ "objets/applique-prouve-1": {
+  "w": 5184,
+  "h": 3456,
+  "sizes": [
+   480,
+   960,
+   1600,
+   2400
+  ],
+  "alpha": true,
+  "color": "#4b4437",
+  "bg": "transparent",
+  "bbox": [
+   323,
+   1071,
+   4470,
+   1342
+  ],
+  "frame": [
+   0,
+   669,
+   5184,
+   2147
+  ]
+ },
+ "objets/applique-prouve-2": {
+  "w": 1024,
+  "h": 768,
+  "sizes": [
+   480,
+   960,
+   1024
+  ],
+  "alpha": false,
+  "color": "#65625c",
+  "bg": "white",
+  "bbox": [
+   0,
+   173,
+   972,
+   465
+  ],
+  "frame": [
+   0,
+   85,
+   1024,
+   640
+  ]
+ },
+ "objets/applique-prouve-3": {
+  "w": 1024,
+  "h": 768,
+  "sizes": [
+   480,
+   960,
+   1024
+  ],
+  "alpha": false,
+  "color": "#5e5c56",
+  "bg": "white",
+  "bbox": [
+   100,
+   131,
+   832,
+   543
+  ],
+  "frame": [
+   25,
+   56,
+   981,
+   692
+  ]
+ },
+ "objets/applique-prouve-4": {
+  "w": 1024,
+  "h": 768,
+  "sizes": [
+   480,
+   960,
+   1024
+  ],
+  "alpha": false,
+  "color": "#4f4f4c",
+  "bg": "scene",
+  "bbox": null,
+  "frame": [
+   0,
+   0,
+   1024,
+   768
+  ]
+ },
+ "objets/applique-prouve-5": {
+  "w": 5184,
+  "h": 3456,
+  "sizes": [
+   480,
+   960,
+   1600,
+   2400
+  ],
+  "alpha": false,
+  "color": "#a09589",
+  "bg": "scene",
+  "bbox": null,
+  "frame": [
+   0,
+   0,
+   5184,
+   3456
+  ]
+ },
+ "objets/bougeoirs-empire-1": {
+  "w": 1024,
+  "h": 768,
+  "sizes": [
+   480,
+   960,
+   1024
+  ],
+  "alpha": false,
+  "color": "#a08a65",
+  "bg": "white",
+  "bbox": [
+   262,
+   0,
+   470,
+   684
+  ],
+  "frame": [
+   200,
+   0,
+   593,
+   745
+  ]
+ },
+ "objets/bougeoirs-empire-2": {
+  "w": 1024,
+  "h": 768,
+  "sizes": [
+   480,
+   960,
+   1024
+  ],
+  "alpha": false,
+  "color": "#997b4c",
+  "bg": "white",
+  "bbox": [
+   241,
+   0,
+   503,
+   711
+  ],
+  "frame": [
+   177,
+   0,
+   631,
+   768
+  ]
+ },
+ "objets/christ-sainte-lucie-1": {
+  "w": 1024,
+  "h": 768,
+  "sizes": [
+   480,
+   960,
+   1024
+  ],
+  "alpha": false,
+  "color": "#4f4743",
+  "bg": "white",
+  "bbox": [
+   15,
+   42,
+   856,
+   684
+  ],
+  "frame": [
+   0,
+   0,
+   947,
+   768
+  ]
+ },
+ "objets/christ-sainte-lucie-2": {
+  "w": 1024,
+  "h": 768,
+  "sizes": [
+   480,
+   960,
+   1024
+  ],
+  "alpha": false,
+  "color": "#312c29",
+  "bg": "white",
+  "bbox": [
+   246,
+   0,
+   532,
+   768
+  ],
+  "frame": [
+   177,
+   0,
+   671,
+   768
+  ]
+ },
+ "objets/christ-sainte-lucie-3": {
+  "w": 1024,
+  "h": 768,
+  "sizes": [
+   480,
+   960,
+   1024
+  ],
+  "alpha": false,
+  "color": "#353231",
+  "bg": "white",
+  "bbox": [
+   358,
+   10,
+   314,
+   741
+  ],
+  "frame": [
+   292,
+   0,
+   447,
+   768
+  ]
+ },
+ "objets/christ-sainte-lucie-4": {
+  "w": 5184,
+  "h": 3456,
+  "sizes": [
+   480,
+   960,
+   1600,
+   2400
+  ],
+  "alpha": false,
+  "color": "#857a73",
+  "bg": "scene",
+  "bbox": null,
+  "frame": [
+   0,
+   0,
+   5184,
+   3456
+  ]
+ },
+ "objets/christ-sainte-lucie-5": {
+  "w": 5184,
+  "h": 3456,
+  "sizes": [
+   480,
+   960,
+   1600,
+   2400
+  ],
+  "alpha": false,
+  "color": "#979392",
+  "bg": "scene",
+  "bbox": null,
+  "frame": [
+   0,
+   0,
+   5184,
+   3456
+  ]
+ },
+ "objets/christ-sainte-lucie-6": {
+  "w": 5184,
+  "h": 3456,
+  "sizes": [
+   480,
+   960,
+   1600,
+   2400
+  ],
+  "alpha": false,
+  "color": "#a99e9a",
+  "bg": "scene",
+  "bbox": null,
+  "frame": [
+   0,
+   0,
+   5184,
+   3456
+  ]
+ },
+ "objets/coffret-circulaire-1": {
+  "w": 1024,
+  "h": 768,
+  "sizes": [
+   480,
+   960,
+   1024
+  ],
+  "alpha": false,
+  "color": "#664e40",
+  "bg": "white",
+  "bbox": [
+   216,
+   63,
+   614,
+   620
+  ],
+  "frame": [
+   160,
+   7,
+   726,
+   732
+  ]
+ },
+ "objets/coffret-circulaire-2": {
+  "w": 5184,
+  "h": 3456,
+  "sizes": [
+   480,
+   960,
+   1600,
+   2400
+  ],
+  "alpha": false,
+  "color": "#a59790",
+  "bg": "scene",
+  "bbox": null,
+  "frame": [
+   0,
+   0,
+   5184,
+   3456
+  ]
+ },
+ "objets/coffret-circulaire-3": {
+  "w": 1024,
+  "h": 768,
+  "sizes": [
+   480,
+   960,
+   1024
+  ],
+  "alpha": false,
+  "color": "#6a5c53",
+  "bg": "scene",
+  "bbox": null,
+  "frame": [
+   0,
+   0,
+   1024,
+   768
+  ]
+ },
+ "objets/coffret-sainte-lucie-1": {
+  "w": 1024,
+  "h": 768,
+  "sizes": [
+   480,
+   960,
+   1024
+  ],
+  "alpha": false,
+  "color": "#5e4b39",
+  "bg": "white",
+  "bbox": [
+   14,
+   50,
+   990,
+   662
+  ],
+  "frame": [
+   0,
+   0,
+   1024,
+   768
+  ]
+ },
+ "objets/coffret-sainte-lucie-2": {
+  "w": 1024,
+  "h": 768,
+  "sizes": [
+   480,
+   960,
+   1024
+  ],
+  "alpha": false,
+  "color": "#65564d",
+  "bg": "white",
+  "bbox": [
+   14,
+   156,
+   983,
+   433
+  ],
+  "frame": [
+   0,
+   67,
+   1024,
+   610
+  ]
+ },
+ "objets/coffret-sainte-lucie-3": {
+  "w": 1024,
+  "h": 768,
+  "sizes": [
+   480,
+   960,
+   1024
+  ],
+  "alpha": false,
+  "color": "#766b65",
+  "bg": "white",
+  "bbox": [
+   35,
+   94,
+   944,
+   556
+  ],
+  "frame": [
+   0,
+   9,
+   1024,
+   726
+  ]
+ },
+ "objets/coffret-sainte-lucie-4": {
+  "w": 5184,
+  "h": 3456,
+  "sizes": [
+   480,
+   960,
+   1600,
+   2400
+  ],
+  "alpha": false,
+  "color": "#7f7976",
+  "bg": "scene",
+  "bbox": null,
+  "frame": [
+   0,
+   0,
+   5184,
+   3456
+  ]
+ },
+ "objets/coffret-sainte-lucie-5": {
+  "w": 5184,
+  "h": 3456,
+  "sizes": [
+   480,
+   960,
+   1600,
+   2400
+  ],
+  "alpha": false,
+  "color": "#645751",
+  "bg": "scene",
+  "bbox": null,
+  "frame": [
+   0,
+   0,
+   5184,
+   3456
+  ]
+ },
+ "objets/coffret-sainte-lucie-6": {
+  "w": 5184,
+  "h": 3456,
+  "sizes": [
+   480,
+   960,
+   1600,
+   2400
+  ],
+  "alpha": false,
+  "color": "#83746b",
+  "bg": "scene",
+  "bbox": null,
+  "frame": [
+   0,
+   0,
+   5184,
+   3456
+  ]
+ },
+ "objets/fauteuil-louis-cresson-1": {
+  "w": 3456,
+  "h": 5184,
+  "sizes": [
+   480,
+   960,
+   1600,
+   2400
+  ],
+  "alpha": false,
+  "color": "#c17f41",
+  "bg": "scene",
+  "bbox": null,
+  "frame": [
+   0,
+   0,
+   3456,
+   5184
+  ]
+ },
+ "objets/fauteuil-louis-cresson-2": {
+  "w": 5184,
+  "h": 3456,
+  "sizes": [
+   480,
+   960,
+   1600,
+   2400
+  ],
+  "alpha": false,
+  "color": "#864c2a",
+  "bg": "scene",
+  "bbox": null,
+  "frame": [
+   0,
+   0,
+   5184,
+   3456
+  ]
+ },
+ "objets/fauteuil-louis-xv-1": {
+  "w": 3456,
+  "h": 5184,
+  "sizes": [
+   480,
+   960,
+   1600,
+   2400
+  ],
+  "alpha": false,
+  "color": "#9f5d29",
+  "bg": "scene",
+  "bbox": null,
+  "frame": [
+   0,
+   0,
+   3456,
+   5184
+  ]
+ },
+ "objets/fauteuil-rene-cresson-1": {
+  "w": 3456,
+  "h": 5184,
+  "sizes": [
+   480,
+   960,
+   1600,
+   2400
+  ],
+  "alpha": false,
+  "color": "#bf8047",
+  "bg": "scene",
+  "bbox": null,
+  "frame": [
+   0,
+   0,
+   3456,
+   5184
+  ]
+ },
+ "objets/fauteuil-rene-cresson-2": {
+  "w": 3456,
+  "h": 5184,
+  "sizes": [
+   480,
+   960,
+   1600,
+   2400
+  ],
+  "alpha": false,
+  "color": "#b37945",
+  "bg": "scene",
+  "bbox": null,
+  "frame": [
+   0,
+   0,
+   3456,
+   5184
+  ]
+ },
+ "objets/fauteuil-rene-cresson-3": {
+  "w": 5184,
+  "h": 3456,
+  "sizes": [
+   480,
+   960,
+   1600,
+   2400
+  ],
+  "alpha": false,
+  "color": "#a86b3e",
+  "bg": "scene",
+  "bbox": null,
+  "frame": [
+   0,
+   0,
+   5184,
+   3456
+  ]
+ },
+ "objets/pendule-empire-1": {
+  "w": 1024,
+  "h": 768,
+  "sizes": [
+   480,
+   960,
+   1024
+  ],
+  "alpha": false,
+  "color": "#706251",
+  "bg": "white",
+  "bbox": [
+   342,
+   53,
+   295,
+   692
+  ],
+  "frame": [
+   280,
+   0,
+   419,
+   768
+  ]
+ },
+ "objets/pendule-empire-2": {
+  "w": 1024,
+  "h": 768,
+  "sizes": [
+   480,
+   960,
+   1024
+  ],
+  "alpha": false,
+  "color": "#736453",
+  "bg": "white",
+  "bbox": [
+   373,
+   46,
+   275,
+   699
+  ],
+  "frame": [
+   310,
+   0,
+   401,
+   768
+  ]
+ },
+ "objets/pendule-empire-3": {
+  "w": 5184,
+  "h": 3456,
+  "sizes": [
+   480,
+   960,
+   1600,
+   2400
+  ],
+  "alpha": false,
+  "color": "#81776a",
+  "bg": "scene",
+  "bbox": null,
+  "frame": [
+   0,
+   0,
+   5184,
+   3456
+  ]
+ },
+ "objets/reliquaire-1": {
+  "w": 1024,
+  "h": 768,
+  "sizes": [
+   480,
+   960,
+   1024
+  ],
+  "alpha": true,
+  "color": "#8d765a",
+  "bg": "transparent",
+  "bbox": [
+   272,
+   104,
+   489,
+   579
+  ],
+  "frame": [
+   220,
+   51,
+   593,
+   683
+  ]
+ },
+ "objets/reliquaire-2": {
+  "w": 1024,
+  "h": 768,
+  "sizes": [
+   480,
+   960,
+   1024
+  ],
+  "alpha": false,
+  "color": "#78695a",
+  "bg": "scene",
+  "bbox": null,
+  "frame": [
+   0,
+   0,
+   1024,
+   768
+  ]
+ },
+ "objets/reliquaire-3": {
+  "w": 1024,
+  "h": 768,
+  "sizes": [
+   480,
+   960,
+   1024
+  ],
+  "alpha": false,
+  "color": "#97897c",
+  "bg": "scene",
+  "bbox": null,
+  "frame": [
+   0,
+   0,
+   1024,
+   768
+  ]
+ },
+ "objets/statue-terre-cuite-1": {
+  "w": 1024,
+  "h": 768,
+  "sizes": [
+   480,
+   960,
+   1024
+  ],
+  "alpha": false,
+  "color": "#92664e",
+  "bg": "white",
+  "bbox": [
+   398,
+   24,
+   225,
+   722
+  ],
+  "frame": [
+   333,
+   0,
+   355,
+   768
+  ]
+ },
+ "objets/statue-terre-cuite-2": {
+  "w": 1024,
+  "h": 768,
+  "sizes": [
+   480,
+   960,
+   1024
+  ],
+  "alpha": false,
+  "color": "#996d55",
+  "bg": "white",
+  "bbox": [
+   299,
+   43,
+   388,
+   725
+  ],
+  "frame": [
+   234,
+   0,
+   518,
+   768
+  ]
+ },
+ "objets/statue-terre-cuite-3": {
+  "w": 1024,
+  "h": 768,
+  "sizes": [
+   480,
+   960,
+   1024
+  ],
+  "alpha": false,
+  "color": "#624333",
+  "bg": "white",
+  "bbox": [
+   375,
+   26,
+   234,
+   727
+  ],
+  "frame": [
+   310,
+   0,
+   365,
+   768
+  ]
+ },
+ "objets/statue-terre-cuite-4": {
+  "w": 5184,
+  "h": 3456,
+  "sizes": [
+   480,
+   960,
+   1600,
+   2400
+  ],
+  "alpha": false,
+  "color": "#a7958c",
+  "bg": "scene",
+  "bbox": null,
+  "frame": [
+   0,
+   0,
+   5184,
+   3456
+  ]
+ },
+ "objets/tableau-pogrebinsky-1": {
+  "w": 3000,
+  "h": 2000,
+  "sizes": [
+   480,
+   960,
+   1600,
+   2400
+  ],
+  "alpha": true,
+  "color": "#a9adae",
+  "bg": "transparent",
+  "bbox": [
+   447,
+   27,
+   2113,
+   1903
+  ],
+  "frame": [
+   256,
+   0,
+   2494,
+   2000
+  ]
+ },
+ "objets/vase-daum-1": {
+  "w": 1024,
+  "h": 768,
+  "sizes": [
+   480,
+   960,
+   1024
+  ],
+  "alpha": false,
+  "color": "#7c5945",
+  "bg": "white",
+  "bbox": [
+   447,
+   79,
+   164,
+   606
+  ],
+  "frame": [
+   393,
+   24,
+   273,
+   716
+  ]
+ },
+ "objets/vase-daum-2": {
+  "w": 1024,
+  "h": 768,
+  "sizes": [
+   480,
+   960,
+   1024
+  ],
+  "alpha": false,
+  "color": "#7a5135",
+  "bg": "scene",
+  "bbox": null,
+  "frame": [
+   0,
+   0,
+   1024,
+   768
+  ]
+ },
+ "objets/vase-daum-3": {
+  "w": 1024,
+  "h": 768,
+  "sizes": [
+   480,
+   960,
+   1024
+  ],
+  "alpha": false,
+  "color": "#7e543a",
+  "bg": "white",
+  "bbox": [
+   448,
+   66,
+   165,
+   626
+  ],
+  "frame": [
+   392,
+   10,
+   278,
+   738
+  ]
+ },
+ "objets/vase-daum-4": {
+  "w": 1024,
+  "h": 768,
+  "sizes": [
+   480,
+   960,
+   1024
+  ],
+  "alpha": false,
+  "color": "#ad7845",
+  "bg": "white",
+  "bbox": [
+   364,
+   43,
+   313,
+   725
+  ],
+  "frame": [
+   299,
+   0,
+   443,
+   768
+  ]
+ },
+ "objets/vase-pinon-1": {
+  "w": 1024,
+  "h": 768,
+  "sizes": [
+   480,
+   960,
+   1024
+  ],
+  "alpha": false,
+  "color": "#68748f",
+  "bg": "white",
+  "bbox": [
+   290,
+   77,
+   459,
+   597
+  ],
+  "frame": [
+   236,
+   24,
+   566,
+   705
+  ]
+ },
+ "objets/vase-pinon-2": {
+  "w": 3000,
+  "h": 2000,
+  "sizes": [
+   480,
+   960,
+   1600,
+   2400
+  ],
+  "alpha": false,
+  "color": "#738ba3",
+  "bg": "scene",
+  "bbox": null,
+  "frame": [
+   0,
+   0,
+   3000,
+   2000
+  ]
+ },
+ "objets/vase-pinon-3": {
+  "w": 2000,
+  "h": 3000,
+  "sizes": [
+   480,
+   960,
+   1600,
+   2000
+  ],
+  "alpha": false,
+  "color": "#818aa0",
+  "bg": "scene",
+  "bbox": null,
+  "frame": [
+   0,
+   0,
+   2000,
+   3000
+  ]
+ }
+}
