@@ -83,7 +83,7 @@ function home(ctx) {
         <a class="btn btn--fill" href="${L(ROUTES.galerie[lang])}" data-magnetic>${t(H.cta1)} ${I.arrow}</a>
         <a class="btn" href="${L(ROUTES.expertises[lang])}" data-magnetic>${t(H.cta2)}</a>
       </div>
-      <div class="hero-meta" data-hero-el><span class="sel">5 rue Gambetta, 57000 Metz</span><span class="sel">03 87 63 61 61</span><span class="open-now" data-open-now></span></div>
+      <div class="hero-meta" data-hero-el><span class="sel">5 rue Gambetta, 57000 Metz</span><a class="sel" href="tel:+33387636161">03 87 63 61 61</a><span class="open-now" data-open-now></span></div>
     </div>
     <div class="hero-stage">
       <div class="hero-piece" data-hero-piece>
@@ -292,7 +292,7 @@ function objet(ctx, ob) {
         <dl class="specs">${specs}</dl>
         <div class="prose">${desc}</div>
         <div class="price"><div style="display:grid;gap:4px"><span class="eyebrow">${lang === 'fr' ? 'Prix' : 'Price'}</span><b>${t(T.ui.prix)}</b></div><button class="btn btn--fill" type="button" data-drawer-open data-magnetic>${t(O.demander)} ${I.arrow}</button></div>
-        <p class="mono muted">${t(O.appeler)} <span class="sel">03 87 63 61 61</span></p>
+        <p class="mono muted">${t(O.appeler)} <a class="sel" href="tel:+33387636161">03 87 63 61 61</a></p>
         <p class="mono muted" style="font-size:.75rem">${t(O.garanties)}</p>
       </div>
     </div>
@@ -335,7 +335,7 @@ function simpleForm(ctx, id, prefill, withSubject) {
     <div class="field"><label for="${id}-tel">${t(F.tel)}</label><input id="${id}-tel" name="tel" type="tel" autocomplete="tel"><span class="field-error"></span></div>
   </div>
   <div class="field"><label for="${id}-email">${t(F.email)}</label><input id="${id}-email" name="email" type="email" autocomplete="email" required><span class="field-error" aria-live="polite"></span></div>
-  <div class="field"><label for="${id}-message">${t(F.message)}</label><textarea id="${id}-message" name="message" required>${esc(prefill || '')}</textarea><span class="field-error" aria-live="polite"></span></div>
+  <div class="field"><label for="${id}-message">${t(F.message)}</label><textarea data-lenis-prevent id="${id}-message" name="message" required>${esc(prefill || '')}</textarea><span class="field-error" aria-live="polite"></span></div>
   <label class="check" for="${id}-consent"><input type="checkbox" id="${id}-consent" name="consent" required><span>${t(F.consent)}</span></label>
   <span class="field-error" data-consent-error aria-live="polite"></span>
   <div><button class="btn btn--fill" type="submit">${t(F.envoyer)} ${I.arrow}</button></div>
@@ -363,7 +363,7 @@ function expertises(ctx) {
     <fieldset class="field"><legend>${t(E.motif)}</legend>${choices('motif', E.motifOpts)}</fieldset>
   </div>
   <div class="wizard-step" data-wiz-step="1" hidden>
-    <div class="field"><label for="x-objets">${t(E.objets)}</label><textarea id="x-objets" name="objets" required placeholder="${t(E.objetsPh)}"></textarea><span class="field-error" aria-live="polite"></span></div>
+    <div class="field"><label for="x-objets">${t(E.objets)}</label><textarea data-lenis-prevent id="x-objets" name="objets" required placeholder="${t(E.objetsPh)}"></textarea><span class="field-error" aria-live="polite"></span></div>
     <div class="field" style="max-width:240px"><label for="x-nombre">${t(E.nombre)}</label><input id="x-nombre" name="nombre" type="number" min="1" inputmode="numeric"><span class="field-error"></span></div>
     <div class="field"><span class="field-label" style="font-family:var(--f-mono);font-size:var(--fs-cap);letter-spacing:.12em;text-transform:uppercase;color:var(--graphite-2)">${t(E.photos)}</span>
       <label class="drop" for="x-photos" data-drop><input id="x-photos" type="file" accept="image/*" multiple data-files><b style="font-weight:500">${t(E.drop)}</b><span class="mono muted">${t(E.dropSub)}</span></label>
@@ -403,7 +403,7 @@ function expertises(ctx) {
       <h1 data-split>${t(E.h1)}</h1>
       <p class="lead" data-reveal>${t(E.lead)}</p>
       ${titres(ctx)}
-      <div class="btn-row" data-reveal><a class="btn btn--fill" href="#demande" data-magnetic>${t(T.home.cta2)} ${I.arrow}</a><span class="mono sel" style="align-self:center">03 87 63 61 61</span></div>
+      <div class="btn-row" data-reveal><a class="btn btn--fill" href="#demande" data-magnetic>${t(T.home.cta2)} ${I.arrow}</a><a class="mono sel" style="align-self:center" href="tel:+33387636161">03 87 63 61 61</a></div>
     </div>
     <div class="phero-media"><div class="photo photo--scene" style="--ar:1168/784" data-etch>${grokPicture('g07-expertise-loupe', 'g08-expertise-loupe', { A, eager: true, alt: '', sizes: '(max-width: 860px) 92vw, 48vw' })}</div></div>
   </div>
@@ -424,7 +424,7 @@ function expertises(ctx) {
       <div style="grid-column:span 12" class="stack">
         <span class="eyebrow">${t(E.estimons)}</span>
         <div class="choices" data-reveal>${tr(E.estimonsList, lang).map(x => `<span class="chip" style="cursor:default">${esc(x)}</span>`).join('')}</div>
-        <p class="mono" data-reveal>${t(E.tarifs)} : <span class="tbc">${t(T.ui.aCompleter)}</span></p>
+        <p class="mono" data-reveal>${t(E.tarifs)}${lang === 'fr' ? ' :' : ':'} <span class="tbc">${t(T.ui.aCompleter)}</span></p>
       </div>
     </div>
   </div>
@@ -436,7 +436,7 @@ function expertises(ctx) {
         <span class="eyebrow">${t(E.formEyebrow)}</span>
         <h2 class="h3" data-split style="font-size:clamp(2.2rem,1.4rem + 2.6vw,3.8rem)">${t(E.formTitle)}</h2>
         <p class="muted" data-reveal>${t(E.lead)}</p>
-        <div class="cartel" data-reveal><span class="muted">${t(E.direct)}</span><span class="cartel-title sel">03 87 63 61 61</span><span>5 rue Gambetta, 57000 Metz</span><span class="open-now" data-open-now></span></div>
+        <div class="cartel" data-reveal><span class="muted">${t(E.direct)}</span><a class="cartel-title sel" href="tel:+33387636161">03 87 63 61 61</a><span>5 rue Gambetta, 57000 Metz</span><span class="open-now" data-open-now></span></div>
       </div>
       <div style="grid-column:6/span 7" class="wiz-col">${wizard}</div>
     </div>
@@ -519,8 +519,8 @@ function contact(ctx) {
       <span class="eyebrow">Pierre Becq · Metz</span>
       <h1 data-split>${t(K.h1)}</h1>
       <p class="lead" data-reveal>${t(K.lead)}</p>
-      <p class="h3 sel" data-reveal style="font-size:clamp(2rem,1.4rem + 2vw,3.2rem)">03 87 63 61 61</p>
-      <p class="mono" data-reveal>${t(K.horaires)} : <span class="open-now" data-open-now></span></p>
+      <p class="h3" data-reveal style="font-size:clamp(2rem,1.4rem + 2vw,3.2rem)"><a class="sel" href="tel:+33387636161">03 87 63 61 61</a></p>
+      <p class="mono" data-reveal>${t(K.horaires)}${lang === 'fr' ? ' :' : ':'} <span class="open-now" data-open-now></span></p>
     </div>
     <div class="phero-media">${photo('maison/facade-rue-gambetta', { A, alt: tr(K.heroAlt, lang), etch: true, eager: true, sizes: '(max-width: 860px) 92vw, 48vw' })}</div>
   </div>
@@ -550,7 +550,7 @@ function mentions(ctx) {
   const fr = lang === 'fr';
   const tb = `<span class="tbc">${fr ? 'à compléter' : 'to be completed'}</span>`;
   const sections = fr ? [
-    ['editeur', 'Éditeur du site', `<dl><dt>Raison sociale</dt><dd>Pierre Becq Antiquaire ${tb}</dd><dt>Forme juridique</dt><dd>${tb}</dd><dt>Adresse</dt><dd class="sel">5 rue Gambetta, 57000 Metz</dd><dt>Téléphone</dt><dd class="sel">03 87 63 61 61</dd><dt>E-mail</dt><dd>${tb}</dd><dt>SIRET</dt><dd>${tb}</dd><dt>RCS</dt><dd>${tb}</dd><dt>TVA intracommunautaire</dt><dd>${tb}</dd><dt>Directeur de la publication</dt><dd>${tb}</dd></dl>`],
+    ['editeur', 'Éditeur du site', `<dl><dt>Raison sociale</dt><dd>Pierre Becq Antiquaire ${tb}</dd><dt>Forme juridique</dt><dd>${tb}</dd><dt>Adresse</dt><dd class="sel">5 rue Gambetta, 57000 Metz</dd><dt>Téléphone</dt><dd><a class="sel" href="tel:+33387636161">03 87 63 61 61</a></dd><dt>E-mail</dt><dd>${tb}</dd><dt>SIRET</dt><dd>${tb}</dd><dt>RCS</dt><dd>${tb}</dd><dt>TVA intracommunautaire</dt><dd>${tb}</dd><dt>Directeur de la publication</dt><dd>${tb}</dd></dl>`],
     ['titres', 'Titres et qualités', `<p>Expert judiciaire honoraire près la cour d'appel ${`<span class="tbc">cour d'appel à préciser</span>`}. Membre de la Compagnie Nationale des Experts en Art.</p>`],
     ['hebergeur', 'Hébergement', `<dl><dt>Hébergeur</dt><dd>Vercel Inc.</dd><dt>Adresse</dt><dd>440 N Barranca Ave #4133, Covina, CA 91723, États-Unis</dd><dt>Site</dt><dd><a class="link" href="https://vercel.com" rel="noopener" target="_blank">vercel.com</a></dd></dl>`],
     ['conception', 'Conception', `<p>Site conçu par <a class="link" href="https://www.ptit-kiwi.fr/" rel="noopener" target="_blank">Ptit Kiwi</a>.</p>`],
@@ -559,7 +559,7 @@ function mentions(ctx) {
     ['mediation', 'Médiation de la consommation', `<p>Médiateur de la consommation compétent : ${tb}.</p>`],
     ['propriete', 'Propriété intellectuelle et images', `<p>Les photographies des objets, de la boutique et les textes appartiennent à Pierre Becq Antiquaire. Toute reproduction sans autorisation est interdite.</p><p>Certaines images d'ambiance (salles, matières, scènes d'expertise) sont générées par intelligence artificielle. Les photographies des objets sont réelles et non retouchées.</p>`]
   ] : [
-    ['editeur', 'Publisher', `<dl><dt>Company name</dt><dd>Pierre Becq Antiquaire ${tb}</dd><dt>Legal form</dt><dd>${tb}</dd><dt>Address</dt><dd class="sel">5 rue Gambetta, 57000 Metz, France</dd><dt>Phone</dt><dd class="sel">+33 3 87 63 61 61</dd><dt>Email</dt><dd>${tb}</dd><dt>SIRET</dt><dd>${tb}</dd><dt>Trade register (RCS)</dt><dd>${tb}</dd><dt>EU VAT number</dt><dd>${tb}</dd><dt>Publication director</dt><dd>${tb}</dd></dl>`],
+    ['editeur', 'Publisher', `<dl><dt>Company name</dt><dd>Pierre Becq Antiquaire ${tb}</dd><dt>Legal form</dt><dd>${tb}</dd><dt>Address</dt><dd class="sel">5 rue Gambetta, 57000 Metz, France</dd><dt>Phone</dt><dd><a class="sel" href="tel:+33387636161">+33 3 87 63 61 61</a></dd><dt>Email</dt><dd>${tb}</dd><dt>SIRET</dt><dd>${tb}</dd><dt>Trade register (RCS)</dt><dd>${tb}</dd><dt>EU VAT number</dt><dd>${tb}</dd><dt>Publication director</dt><dd>${tb}</dd></dl>`],
     ['titres', 'Titles', `<p>Honorary court-appointed expert at the Court of Appeal <span class="tbc">court to be confirmed</span>. Member of the Compagnie Nationale des Experts en Art.</p>`],
     ['hebergeur', 'Hosting', `<dl><dt>Host</dt><dd>Vercel Inc.</dd><dt>Address</dt><dd>440 N Barranca Ave #4133, Covina, CA 91723, USA</dd><dt>Website</dt><dd><a class="link" href="https://vercel.com" rel="noopener" target="_blank">vercel.com</a></dd></dl>`],
     ['conception', 'Design', `<p>Website designed by <a class="link" href="https://www.ptit-kiwi.fr/" rel="noopener" target="_blank">Ptit Kiwi</a>.</p>`],
@@ -647,10 +647,34 @@ function dataJS() {
 }
 
 /* ======================= build ======================= */
+/* Typographie française : espace insécable avant : ; ! ? et à l'intérieur des « », apostrophe typographique.
+   Seulement sur les pages françaises, hors script, style, pre, code et textarea. */
+function typoFr(html) {
+  const NB = '\u00a0';
+  const fix = (t, attr) => {
+    t = t.replace(/ ([:;!?])(?=[\s<"'»)\]]|$)/g, NB + '$1').replace(/« /g, '«' + NB).replace(/ »/g, NB + '»');
+    return t.replace(/([A-Za-zÀ-ÖØ-öø-ÿŒœ])'([A-Za-zÀ-ÖØ-öø-ÿŒœ])/g, '$1’$2');
+  };
+  let out = ''; let i = 0; let skip = null; let m;
+  const re = /<!--[\s\S]*?-->|<(\/?)([a-zA-Z][\w-]*)([^>]*)>/g;
+  while ((m = re.exec(html))) {
+    let text = html.slice(i, m.index);
+    if (!skip && text) text = fix(text);
+    out += text;
+    let tag = m[0]; const name = (m[2] || '').toLowerCase();
+    if (tag.startsWith('<!--')) { out += tag; i = re.lastIndex; continue; }
+    if (skip) { if (m[1] && name === skip) skip = null; out += tag; i = re.lastIndex; continue; }
+    if (!m[1] && /^(script|style|pre|code|textarea)$/.test(name)) skip = name;
+    const meta = name === 'meta' && /(name|property)="(description|og:title|og:description)"/.test(tag);
+    tag = tag.replace(/\s(alt|title|aria-label|placeholder|content)="([^"]*)"/g, (all, a, v) => (a === 'content' && !meta ? all : ` ${a}="${fix(v, true)}"`));
+    out += tag; i = re.lastIndex;
+  }
+  return out + (skip ? html.slice(i) : fix(html.slice(i)));
+}
 function write(file, html) {
   const out = path.join(ROOT, file);
   fs.mkdirSync(path.dirname(out), { recursive: true });
-  fs.writeFileSync(out, html);
+  fs.writeFileSync(out, /^<!doctype html>\s*<html lang="fr"/i.test(html) ? typoFr(html) : html);
 }
 
 function buildAll() {

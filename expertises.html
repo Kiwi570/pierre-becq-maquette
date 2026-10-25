@@ -4,29 +4,37 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Expertises — Pierre Becq Antiquaire</title>
-<meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Expertise et estimation de biens mobiliers à Metz : particuliers, notaires et successions, entreprises. Demande en ligne.">
-<meta name="robots" content="noindex">
+<meta name="description" content="Expertise et estimation de biens mobiliers à Metz : particuliers, notaires et successions, entreprises. Demande en ligne.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Pierre Becq">
+<meta property="og:title" content="Expertises — Pierre Becq Antiquaire">
+<meta property="og:description" content="Expertise et estimation de biens mobiliers à Metz : particuliers, notaires et successions, entreprises. Demande en ligne.">
+<meta property="og:image" content="https://pierre-becq-maquette.vercel.app/assets/img/partage-pierre-becq.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://pierre-becq-maquette.vercel.app/expertises">
 <meta name="theme-color" content="#F2EEE7">
 <meta name="pb-page" content="expertises">
 <meta name="pb-lang" content="fr">
 <meta name="pb-root" content="">
-
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-<link rel="preload" href="assets/fonts/instrument-serif-regular.woff" as="font" type="font/woff" crossorigin>
-<link rel="preload" href="assets/fonts/inter-tight-var.woff" as="font" type="font/woff" crossorigin>
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/instrument-serif-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-tight-var.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/vendor/lenis.css">
 <link rel="stylesheet" href="assets/css/site.css">
-<script>(function(d){var c=d.documentElement.classList;c.add('js');try{if(localStorage.getItem('pb-motion')==='reduced')c.add('is-reduced')}catch(e){}try{if(sessionStorage.getItem('pb-veil')==='1')c.add('veil-on')}catch(e){}})(document)</script>
+<script>(function(d){var c=d.documentElement.classList;c.add('js');try{if(localStorage.getItem('pb-motion')==='reduced')c.add('is-reduced')}catch(e){}try{if(sessionStorage.getItem('pb-veil')==='1'){c.add('veil-on');setTimeout(function(){c.remove('veil-on')},2500)}}catch(e){}})(document)</script>
 </head>
 <body>
 <a class="skip" href="#contenu">Aller au contenu</a>
 <header class="hdr" id="hdr">
   <div class="wrap">
-    <a class="brand" href="index.html" aria-label="Pierre Becq Antiquaire, accueil"><svg class="brand-mark" viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="37" fill="none" stroke="currentColor" stroke-width="1.6"/><text x="40" y="51" text-anchor="middle" font-family="Instrument Serif, Times New Roman, serif" font-size="34" fill="currentColor">PB</text></svg><span class="brand-name"><b>Pierre Becq</b><span>Antiquaire · Metz · 1969</span></span></a>
+    <a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="37" fill="none" stroke="currentColor" stroke-width="1.6"/><text x="40" y="51" text-anchor="middle" font-family="Instrument Serif, Times New Roman, serif" font-size="34" fill="currentColor">PB</text></svg><span class="brand-name"><b>Pierre Becq</b><span>Antiquaire · Metz · 1969</span></span></a>
     <nav class="nav" aria-label="Navigation principale"><a href="galerie.html">La galerie</a><a href="expertises.html" aria-current="page">Expertises</a><a href="maison.html">La maison</a><a href="contact.html">Contact</a></nav>
     <div class="hdr-tools">
-      <span class="hdr-tel">03 87 63 61 61</span>
+      <a class="hdr-tel" href="tel:+33387636161">03 87 63 61 61</a>
       <a class="tool" href="en/appraisals.html" hreflang="en" lang="en" data-lang-switch>EN</a>
       <button class="tool tool--motion" type="button" data-motion-toggle aria-pressed="false" title="Réduire les animations"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M12 4v8l5 3" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><span class="tool-label">Calme</span></button>
       <button class="tool burger" type="button" data-menu-open aria-expanded="false" aria-controls="menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18M3 16h18" stroke="currentColor" stroke-width="1.3"/></svg><span class="sr-only">Menu</span></button>
@@ -36,7 +44,7 @@
 <div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Menu">
   <button class="tool menu-close" type="button" data-menu-close><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="1.3"/></svg><span class="sr-only">Fermer</span></button>
   <nav><a href="index.html">Accueil</a><a href="galerie.html">La galerie</a><a href="expertises.html" aria-current="page">Expertises</a><a href="maison.html">La maison</a><a href="contact.html">Contact</a></nav>
-  <div class="menu-foot"><span class="sel">5 rue Gambetta, 57000 Metz</span><span class="sel">03 87 63 61 61</span></div>
+  <div class="menu-foot"><span class="sel">5 rue Gambetta, 57000 Metz</span><a class="sel" href="tel:+33387636161">03 87 63 61 61</a></div>
 </div>
 <div class="veil" aria-hidden="true"><div class="veil-label"><span class="eyebrow">Pierre Becq</span><b data-veil-title>Expertises</b></div></div>
 <div class="cursor" aria-hidden="true"><div class="cursor-ring"><span data-cursor-label></span></div><div class="cursor-dot"></div></div>
@@ -47,12 +55,12 @@
     <div class="phero-copy">
       <span class="eyebrow">Pierre Becq · Expert</span>
       <h1 data-split>Expertises</h1>
-      <p class="lead" data-reveal>Faites votre demande d'expertise en ligne et soyez recontacté dans les meilleurs délais.</p>
+      <p class="lead" data-reveal>Faites votre demande d’expertise en ligne et soyez recontacté dans les meilleurs délais.</p>
       <div class="titres">
-  <div class="titre" data-reveal><img src="assets/img/maison/insigne-expert-judiciaire-226.webp" width="226" height="223" alt="Insigne des experts judiciaires près la cour d’appel" loading="lazy"><p>Expert judiciaire honoraire près la cour d'appel</p></div>
+  <div class="titre" data-reveal><img src="assets/img/maison/insigne-expert-judiciaire-226.webp" width="226" height="223" alt="Insigne des experts judiciaires près la cour d’appel" loading="lazy"><p>Expert judiciaire honoraire près la cour d’appel</p></div>
   <div class="titre" data-reveal><img src="assets/img/maison/logo-cne-480.webp" width="512" height="512" alt="Logo de la Compagnie Nationale des Experts — Experts en Art" loading="lazy"><p>Membre de la Compagnie Nationale des Experts en Art</p></div>
 </div>
-      <div class="btn-row" data-reveal><a class="btn btn--fill" href="#demande" data-magnetic>Demander une expertise <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h17M14 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></a><span class="mono sel" style="align-self:center">03 87 63 61 61</span></div>
+      <div class="btn-row" data-reveal><a class="btn btn--fill" href="#demande" data-magnetic>Demander une expertise <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h17M14 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></a><a class="mono sel" style="align-self:center" href="tel:+33387636161">03 87 63 61 61</a></div>
     </div>
     <div class="phero-media"><div class="photo photo--scene" style="--ar:1168/784" data-etch><picture><source media="(max-width: 760px)" srcset="assets/img/grok/g08-expertise-loupe-640.webp 640w, assets/img/grok/g08-expertise-loupe-784.webp 784w" sizes="100vw"><img src="assets/img/grok/g07-expertise-loupe-1168.webp" srcset="assets/img/grok/g07-expertise-loupe-640.webp 640w, assets/img/grok/g07-expertise-loupe-1168.webp 1168w" sizes="(max-width: 860px) 92vw, 48vw" width="1168" height="784" alt="" fetchpriority="high" decoding="async"></picture></div></div>
   </div>
@@ -62,15 +70,15 @@
     <div class="sec-head"><span class="eyebrow">Pour qui</span><h2 data-split>Trois missions, une même rigueur</h2></div>
     <div class="publics" style="margin-top:0"><article class="public" data-tilt>
   <div class="photo photo--scene" style="--ar:784/1168"><img src="assets/img/grok/g09-particulier-784.webp" srcset="assets/img/grok/g09-particulier-640.webp 640w, assets/img/grok/g09-particulier-784.webp 784w" sizes="(max-width: 960px) 90vw, 30vw" width="784" height="1168" alt="" loading="lazy" decoding="async"></div>
-  <div class="public-body"><h3>L'expert du particulier</h3><p>L'expertise d'art préalable, par son état descriptif des biens mobiliers, détermine le bon choix du contrat multirisque habitation, valide l'assurance tous risques et objets précieux et confère aux biens mobiliers la preuve d'existence.</p><p>Elle permet d'évaluer avec précision le capital mobilier : le rapport présente une liste récapitulative des objets mobiliers et précieux, classés selon leur nature et chiffrés. Cette répartition permet d'évaluer au plus juste le capital de la multirisque habitation et de distinguer les objets de valeur entrant dans la garantie.</p></div>
+  <div class="public-body"><h3>L’expert du particulier</h3><p>L’expertise d’art préalable, par son état descriptif des biens mobiliers, détermine le bon choix du contrat multirisque habitation, valide l’assurance tous risques et objets précieux et confère aux biens mobiliers la preuve d’existence.</p><p>Elle permet d’évaluer avec précision le capital mobilier : le rapport présente une liste récapitulative des objets mobiliers et précieux, classés selon leur nature et chiffrés. Cette répartition permet d’évaluer au plus juste le capital de la multirisque habitation et de distinguer les objets de valeur entrant dans la garantie.</p></div>
 </article>
 <article class="public" data-tilt>
   <div class="photo photo--scene" style="--ar:784/1168"><img src="assets/img/grok/g10-notaire-784.webp" srcset="assets/img/grok/g10-notaire-640.webp 640w, assets/img/grok/g10-notaire-784.webp 784w" sizes="(max-width: 960px) 90vw, 30vw" width="784" height="1168" alt="" loading="lazy" decoding="async"></div>
-  <div class="public-body"><h3>L'expert auprès du notaire</h3><p>Partie intégrante d'une succession, l'évaluation du patrimoine mobilier exige, au même titre que celle des biens immobiliers, l'intervention d'un spécialiste choisi par les intéressés ou le notaire. Notre cabinet répond à cette demande.</p></div>
+  <div class="public-body"><h3>L’expert auprès du notaire</h3><p>Partie intégrante d’une succession, l’évaluation du patrimoine mobilier exige, au même titre que celle des biens immobiliers, l’intervention d’un spécialiste choisi par les intéressés ou le notaire. Notre cabinet répond à cette demande.</p></div>
 </article>
 <article class="public" data-tilt>
   <div class="photo photo--scene" style="--ar:784/1168"><img src="assets/img/grok/g11-entreprise-784.webp" srcset="assets/img/grok/g11-entreprise-640.webp 640w, assets/img/grok/g11-entreprise-784.webp 784w" sizes="(max-width: 960px) 90vw, 30vw" width="784" height="1168" alt="" loading="lazy" decoding="async"></div>
-  <div class="public-body"><h3>L'expert de l'entreprise</h3><p>Notre mission consiste à réaliser un inventaire descriptif des biens de l'entreprise, du matériel et du mobilier d'exploitation.</p><p>Les avantages immédiats : être parfaitement assuré, éviter la sous-assurance ou la sur-assurance, et faciliter le règlement d'un éventuel sinistre en apportant la preuve de l'existence des biens et de leur valeur.</p></div>
+  <div class="public-body"><h3>L’expert de l’entreprise</h3><p>Notre mission consiste à réaliser un inventaire descriptif des biens de l’entreprise, du matériel et du mobilier d’exploitation.</p><p>Les avantages immédiats : être parfaitement assuré, éviter la sous-assurance ou la sur-assurance, et faciliter le règlement d’un éventuel sinistre en apportant la preuve de l’existence des biens et de leur valeur.</p></div>
 </article></div>
   </div>
 </section>
@@ -79,12 +87,12 @@
     <div class="grid" style="align-items:end">
       <div style="grid-column:1/-1;max-width:760px" class="stack"><span class="eyebrow">Le rapport</span><h2 class="h3" data-split style="font-size:clamp(2.2rem,1.4rem + 2.6vw,4rem)">Un dossier original, photographié et chiffré</h2><p class="lead muted" data-reveal>Expertise comportant un dossier original avec des photographies et des descriptifs détaillés et chiffrés.</p></div>
     </div>
-    <div class="steps"><div class="steps-line" data-steps-line></div><div class="step" data-reveal><h3>Votre demande</h3><p>En ligne ou par téléphone, avec quelques photos si vous le pouvez.</p></div><div class="step" data-reveal><h3>L'inventaire</h3><p>Chaque objet est décrit et photographié.</p></div><div class="step" data-reveal><h3>L'estimation</h3><p>Chaque objet est chiffré et classé selon sa nature.</p></div><div class="step" data-reveal><h3>Le rapport</h3><p>Vous recevez un dossier original, détaillé et chiffré.</p></div></div>
+    <div class="steps"><div class="steps-line" data-steps-line></div><div class="step" data-reveal><h3>Votre demande</h3><p>En ligne ou par téléphone, avec quelques photos si vous le pouvez.</p></div><div class="step" data-reveal><h3>L’inventaire</h3><p>Chaque objet est décrit et photographié.</p></div><div class="step" data-reveal><h3>L’estimation</h3><p>Chaque objet est chiffré et classé selon sa nature.</p></div><div class="step" data-reveal><h3>Le rapport</h3><p>Vous recevez un dossier original, détaillé et chiffré.</p></div></div>
     <div class="grid" style="margin-top:clamp(56px,7vw,100px)">
       <div style="grid-column:span 12" class="stack">
         <span class="eyebrow">Ce que nous estimons</span>
-        <div class="choices" data-reveal><span class="chip" style="cursor:default">Mobiliers anciens</span><span class="chip" style="cursor:default">Objets d'art</span><span class="chip" style="cursor:default">Tableaux</span><span class="chip" style="cursor:default">Bronzes</span><span class="chip" style="cursor:default">Horlogerie</span><span class="chip" style="cursor:default">Argenterie</span><span class="chip" style="cursor:default">Successions et partages</span></div>
-        <p class="mono" data-reveal>Tarifs et délais : <span class="tbc">à compléter</span></p>
+        <div class="choices" data-reveal><span class="chip" style="cursor:default">Mobiliers anciens</span><span class="chip" style="cursor:default">Objets d’art</span><span class="chip" style="cursor:default">Tableaux</span><span class="chip" style="cursor:default">Bronzes</span><span class="chip" style="cursor:default">Horlogerie</span><span class="chip" style="cursor:default">Argenterie</span><span class="chip" style="cursor:default">Successions et partages</span></div>
+        <p class="mono" data-reveal>Tarifs et délais : <span class="tbc">à compléter</span></p>
       </div>
     </div>
   </div>
@@ -93,10 +101,10 @@
   <div class="wrap">
     <div class="grid">
       <div style="grid-column:1/span 4" class="stack" data-demande-aside>
-        <span class="eyebrow">Demande d'expertise</span>
+        <span class="eyebrow">Demande d’expertise</span>
         <h2 class="h3" data-split style="font-size:clamp(2.2rem,1.4rem + 2.6vw,3.8rem)">Décrivez-nous vos objets</h2>
-        <p class="muted" data-reveal>Faites votre demande d'expertise en ligne et soyez recontacté dans les meilleurs délais.</p>
-        <div class="cartel" data-reveal><span class="muted">Vous préférez en parler ?</span><span class="cartel-title sel">03 87 63 61 61</span><span>5 rue Gambetta, 57000 Metz</span><span class="open-now" data-open-now></span></div>
+        <p class="muted" data-reveal>Faites votre demande d’expertise en ligne et soyez recontacté dans les meilleurs délais.</p>
+        <div class="cartel" data-reveal><span class="muted">Vous préférez en parler ?</span><a class="cartel-title sel" href="tel:+33387636161">03 87 63 61 61</a><span>5 rue Gambetta, 57000 Metz</span><span class="open-now" data-open-now></span></div>
       </div>
       <div style="grid-column:6/span 7" class="wiz-col"><form class="wizard" data-wizard novalidate id="form-expertise">
   <ol class="wizard-progress" aria-label="Étapes"><li data-wiz-mark="0" class="is-current" aria-current="step">01 · Vous</li><li data-wiz-mark="1">02 · Les objets</li><li data-wiz-mark="2">03 · Coordonnées</li><li data-wiz-mark="3">04 · Vérifier</li></ol>
@@ -105,8 +113,8 @@
     <fieldset class="field"><legend>Pour</legend><div class="choices"><label class="choice"><input type="radio" name="motif" id="x-motif-0" value="Une assurance" checked><span>Une assurance</span></label><label class="choice"><input type="radio" name="motif" id="x-motif-1" value="Une succession ou un partage"><span>Une succession ou un partage</span></label><label class="choice"><input type="radio" name="motif" id="x-motif-2" value="Une vente"><span>Une vente</span></label><label class="choice"><input type="radio" name="motif" id="x-motif-3" value="Un inventaire"><span>Un inventaire</span></label></div></fieldset>
   </div>
   <div class="wizard-step" data-wiz-step="1" hidden>
-    <div class="field"><label for="x-objets">Description des objets</label><textarea id="x-objets" name="objets" required placeholder="Par exemple : une commode, deux tableaux, une pendule…"></textarea><span class="field-error" aria-live="polite"></span></div>
-    <div class="field" style="max-width:240px"><label for="x-nombre">Nombre d'objets (environ)</label><input id="x-nombre" name="nombre" type="number" min="1" inputmode="numeric"><span class="field-error"></span></div>
+    <div class="field"><label for="x-objets">Description des objets</label><textarea data-lenis-prevent id="x-objets" name="objets" required placeholder="Par exemple : une commode, deux tableaux, une pendule…"></textarea><span class="field-error" aria-live="polite"></span></div>
+    <div class="field" style="max-width:240px"><label for="x-nombre">Nombre d’objets (environ)</label><input id="x-nombre" name="nombre" type="number" min="1" inputmode="numeric"><span class="field-error"></span></div>
     <div class="field"><span class="field-label" style="font-family:var(--f-mono);font-size:var(--fs-cap);letter-spacing:.12em;text-transform:uppercase;color:var(--graphite-2)">Photos (facultatif)</span>
       <label class="drop" for="x-photos" data-drop><input id="x-photos" type="file" accept="image/*" multiple data-files><b style="font-weight:500">Déposez vos photos ici ou cliquez pour les choisir</b><span class="mono muted">JPG ou PNG, 8 photos maximum</span></label>
       <div class="previews" data-previews></div>
@@ -121,7 +129,7 @@
       <div class="field"><label for="x-email">E-mail</label><input id="x-email" name="email" type="email" autocomplete="email" required><span class="field-error" aria-live="polite"></span></div>
       <div class="field"><label for="x-tel">Téléphone</label><input id="x-tel" name="tel" type="tel" autocomplete="tel"><span class="field-error"></span></div>
     </div>
-    <label class="check" for="x-consent"><input type="checkbox" id="x-consent" name="consent" required><span>J'accepte que mes données servent uniquement à répondre à ma demande.</span></label>
+    <label class="check" for="x-consent"><input type="checkbox" id="x-consent" name="consent" required><span>J’accepte que mes données servent uniquement à répondre à ma demande.</span></label>
     <span class="field-error" data-consent-error aria-live="polite"></span>
   </div>
   <div class="wizard-step" data-wiz-step="3" hidden>
@@ -133,8 +141,8 @@
     <button class="btn btn--fill" type="button" data-wiz-next style="margin-left:auto">Continuer <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h17M14 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></button>
     <button class="btn btn--sevres" type="submit" data-wiz-submit hidden style="margin-left:auto">Envoyer la demande <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h17M14 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></button>
   </div>
-  <p class="demo-note">Maquette : aucun message n'est envoyé.</p>
-  <div class="form-success" data-success hidden tabindex="-1"><h3>Demande prête</h3><p>Dans la version en ligne, votre message part à la boutique et vous recevez une réponse rapidement.</p><p class="demo-note">Maquette : aucun message n'est envoyé.</p></div>
+  <p class="demo-note">Maquette : aucun message n’est envoyé.</p>
+  <div class="form-success" data-success hidden tabindex="-1"><h3>Demande prête</h3><p>Dans la version en ligne, votre message part à la boutique et vous recevez une réponse rapidement.</p><p class="demo-note">Maquette : aucun message n’est envoyé.</p></div>
 </form></div>
     </div>
   </div>
@@ -144,15 +152,15 @@
   <div class="wrap">
     <div class="ftr-big" data-ftr-cote><span class="ftr-name">Pierre Becq</span></div>
     <div class="ftr-grid">
-      <div class="ftr-col"><h4>La boutique</h4><span class="sel">5 rue Gambetta</span><span class="sel">57000 Metz</span><span class="sel">03 87 63 61 61</span><span class="open-now" data-open-now></span></div>
-      <div class="ftr-col"><h4>Senon (Meuse)</h4><span class="sel">3 rue de la Fontaine</span><span class="sel">55230 Senon</span><span class="sel">03 29 85 98 17</span></div>
-      <div class="ftr-col"><h4>Le site</h4>
+      <div class="ftr-col"><h2 class="ftr-h">La boutique</h2><span class="sel">5 rue Gambetta</span><span class="sel">57000 Metz</span><a class="sel" href="tel:+33387636161">03 87 63 61 61</a><span class="open-now" data-open-now></span></div>
+      <div class="ftr-col"><h2 class="ftr-h">Senon (Meuse)</h2><span class="sel">3 rue de la Fontaine</span><span class="sel">55230 Senon</span><a class="sel" href="tel:+33329859817">03 29 85 98 17</a></div>
+      <div class="ftr-col"><h2 class="ftr-h">Le site</h2>
         <a class="link" href="galerie.html">La galerie</a>
         <a class="link" href="expertises.html">Expertises</a>
         <a class="link" href="maison.html">La maison</a>
         <a class="link" href="contact.html">Contact</a>
       </div>
-      <div class="ftr-col"><h4>Suivre la maison</h4>
+      <div class="ftr-col"><h2 class="ftr-h">Suivre la maison</h2>
         <a class="link" href="https://www.instagram.com/pierrebecqantiquaire" rel="noopener" target="_blank">Instagram</a>
         <a class="link" href="https://www.facebook.com/pierrebecqantiquaire" rel="noopener" target="_blank">Facebook</a>
         <a class="link" href="https://www.linkedin.com/in/pierre-andré-becq-947790132/" rel="noopener" target="_blank">LinkedIn</a>

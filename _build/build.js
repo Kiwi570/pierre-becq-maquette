@@ -13,6 +13,7 @@ const GROK = require('./grok.json');
 const T = require('./content/textes.js');
 
 const YEAR_NOW = new Date().getFullYear();
+const SITE_URL = 'https://pierre-becq-maquette.vercel.app'; // adresse de la maquette : à remplacer à la mise en ligne
 const LANGS = ['fr', 'en'];
 
 /* ---------- routes ---------- */
@@ -110,27 +111,34 @@ const I = {
 /* ---------- shared partials ---------- */
 function head(ctx, title, desc) {
   const { lang, file, A } = ctx;
-  const alt = ctx.alt ? ctx.alt : null;
   return `<!doctype html>
 <html lang="${lang}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>${esc(title)}</title>
-<meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="${esc(desc)}">
-<meta name="robots" content="noindex">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="${lang === 'fr' ? 'fr_FR' : 'en_GB'}">
+<meta property="og:site_name" content="Pierre Becq">
+<meta property="og:title" content="${esc(title)}">
+<meta property="og:description" content="${esc(desc)}">
+<meta property="og:image" content="${SITE_URL}/assets/img/partage-pierre-becq.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">${ctx.page === 'nf' ? '' : `
+<meta property="og:url" content="${SITE_URL}/${file.replace(/\/?index\.html$/, '').replace(/\.html$/, '')}">`}
 <meta name="theme-color" content="#F2EEE7">
 <meta name="pb-page" content="${ctx.page}">
 <meta name="pb-lang" content="${lang}">
 <meta name="pb-root" content="${rel(file, '')}">
-${alt ? `<link rel="alternate" hreflang="${lang === 'fr' ? 'en' : 'fr'}" href="${alt}">` : ''}
 <link rel="icon" href="${A('img/favicon.svg')}" type="image/svg+xml">
-<link rel="preload" href="${A('fonts/instrument-serif-regular.woff')}" as="font" type="font/woff" crossorigin>
-<link rel="preload" href="${A('fonts/inter-tight-var.woff')}" as="font" type="font/woff" crossorigin>
+<link rel="apple-touch-icon" href="${A('img/apple-touch-icon.png')}">
+<link rel="preload" href="${A('fonts/instrument-serif-regular.woff2')}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="${A('fonts/inter-tight-var.woff2')}" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="${A('vendor/lenis.css')}">
 <link rel="stylesheet" href="${A('css/site.css')}">
-<script>(function(d){var c=d.documentElement.classList;c.add('js');try{if(localStorage.getItem('pb-motion')==='reduced')c.add('is-reduced')}catch(e){}try{if(sessionStorage.getItem('pb-veil')==='1')c.add('veil-on')}catch(e){}})(document)</script>
+<script>(function(d){var c=d.documentElement.classList;c.add('js');try{if(localStorage.getItem('pb-motion')==='reduced')c.add('is-reduced')}catch(e){}try{if(sessionStorage.getItem('pb-veil')==='1'){c.add('veil-on');setTimeout(function(){c.remove('veil-on')},2500)}}catch(e){}})(document)</script>
 </head>
 <body>`;
 }
@@ -144,10 +152,10 @@ function header(ctx) {
   return `<a class="skip" href="#contenu">${esc(tr(T.ui.skip, lang))}</a>
 <header class="hdr" id="hdr">
   <div class="wrap">
-    <a class="brand" href="${L(ROUTES.home[lang])}" aria-label="${esc(tr(T.ui.home, lang))}">${I.logo}<span class="brand-name"><b>Pierre Becq</b><span>${esc(tr(T.ui.tagline, lang))}</span></span></a>
+    <a class="brand" href="${L(ROUTES.home[lang])}">${I.logo}<span class="brand-name"><b>Pierre Becq</b><span>${esc(tr(T.ui.tagline, lang))}</span></span></a>
     <nav class="nav" aria-label="${esc(tr(T.ui.mainNav, lang))}">${links}</nav>
     <div class="hdr-tools">
-      <span class="hdr-tel">03 87 63 61 61</span>
+      <a class="hdr-tel" href="tel:+33387636161">03 87 63 61 61</a>
       <a class="tool" href="${L(ctx.altFile)}" hreflang="${other}" lang="${other}" data-lang-switch>${other.toUpperCase()}</a>
       <button class="tool tool--motion" type="button" data-motion-toggle aria-pressed="false" title="${esc(tr(T.ui.motion, lang))}">${I.motion}<span class="tool-label">${esc(tr(T.ui.motionShort, lang))}</span></button>
       <button class="tool burger" type="button" data-menu-open aria-expanded="false" aria-controls="menu">${I.menu}<span class="sr-only">${esc(tr(T.ui.menu, lang))}</span></button>
@@ -157,7 +165,7 @@ function header(ctx) {
 <div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="${esc(tr(T.ui.menu, lang))}">
   <button class="tool menu-close" type="button" data-menu-close>${I.close}<span class="sr-only">${esc(tr(T.ui.close, lang))}</span></button>
   <nav><a href="${L(ROUTES.home[lang])}">${esc(tr(T.ui.homeShort, lang))}</a>${links}</nav>
-  <div class="menu-foot"><span class="sel">5 rue Gambetta, 57000 Metz</span><span class="sel">03 87 63 61 61</span></div>
+  <div class="menu-foot"><span class="sel">5 rue Gambetta, 57000 Metz</span><a class="sel" href="tel:+33387636161">03 87 63 61 61</a></div>
 </div>
 <div class="veil" aria-hidden="true"><div class="veil-label"><span class="eyebrow">Pierre Becq</span><b data-veil-title>${esc(ctx.veilTitle || 'Pierre Becq')}</b></div></div>
 <div class="cursor" aria-hidden="true"><div class="cursor-ring"><span data-cursor-label></span></div><div class="cursor-dot"></div></div>`;
@@ -170,15 +178,15 @@ function footer(ctx) {
   <div class="wrap">
     <div class="ftr-big" data-ftr-cote><span class="ftr-name">Pierre Becq</span></div>
     <div class="ftr-grid">
-      <div class="ftr-col"><h4>${t('boutique')}</h4><span class="sel">5 rue Gambetta</span><span class="sel">57000 Metz</span><span class="sel">03 87 63 61 61</span><span class="open-now" data-open-now></span></div>
-      <div class="ftr-col"><h4>Senon (Meuse)</h4><span class="sel">3 rue de la Fontaine</span><span class="sel">55230 Senon</span><span class="sel">03 29 85 98 17</span></div>
-      <div class="ftr-col"><h4>${t('plan')}</h4>
+      <div class="ftr-col"><h2 class="ftr-h">${t('boutique')}</h2><span class="sel">5 rue Gambetta</span><span class="sel">57000 Metz</span><a class="sel" href="tel:+33387636161">03 87 63 61 61</a><span class="open-now" data-open-now></span></div>
+      <div class="ftr-col"><h2 class="ftr-h">Senon (Meuse)</h2><span class="sel">3 rue de la Fontaine</span><span class="sel">55230 Senon</span><a class="sel" href="tel:+33329859817">03 29 85 98 17</a></div>
+      <div class="ftr-col"><h2 class="ftr-h">${t('plan')}</h2>
         <a class="link" href="${L(ROUTES.galerie[lang])}">${esc(tr(T.nav.galerie, lang))}</a>
         <a class="link" href="${L(ROUTES.expertises[lang])}">${esc(tr(T.nav.expertises, lang))}</a>
         <a class="link" href="${L(ROUTES.maison[lang])}">${esc(tr(T.nav.maison, lang))}</a>
         <a class="link" href="${L(ROUTES.contact[lang])}">${esc(tr(T.nav.contact, lang))}</a>
       </div>
-      <div class="ftr-col"><h4>${t('suivre')}</h4>
+      <div class="ftr-col"><h2 class="ftr-h">${t('suivre')}</h2>
         <a class="link" href="https://www.instagram.com/pierrebecqantiquaire" rel="noopener" target="_blank">Instagram</a>
         <a class="link" href="https://www.facebook.com/pierrebecqantiquaire" rel="noopener" target="_blank">Facebook</a>
         <a class="link" href="https://www.linkedin.com/in/pierre-andré-becq-947790132/" rel="noopener" target="_blank">LinkedIn</a>
